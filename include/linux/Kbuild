@@ -1,0 +1,3 @@
+# UAPI Header export list
+header-y += nvme.h
+header-y += nvme-rdma.h 

@@ -1,0 +1,15 @@
+ccflags-y := -I$(src)/../../../include
+obj-m += nvme-core.o 
+obj-m += nvme.o
+obj-m += nvme-fabrics.o
+obj-m += nvme-rdma.o
+obj-m += nvme-ksid.o
+obj-m += ksid-custom.o
+
+nvme-core-y := core.o 
+nvme-core-y += scsi.o lightnvm.o
+nvme-y      += pci.o
+nvme-fabrics-y   += fabrics.o
+nvme-rdma-y      += rdma.o
+nvme-ksid-y      += ksid.o
+ksid-custom-y    += custom.o
